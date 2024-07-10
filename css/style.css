@@ -1,0 +1,201 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #F3F5FC;
+    --secondary-color: #0A3871;
+    --tertiary-color: #FFFFFF;
+    --text-resp: #495057;
+}
+
+body {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+header {
+    width: 100%;
+    position: initial;
+}
+
+header img {
+    padding: 24px 0 24px 16px;
+}
+
+section {
+    padding: 1.2em;
+}
+
+section textarea {
+    background-color: unset;
+    border: unset;
+    width: 100%;
+    outline: none;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--secondary-color);
+    height: 12em;
+}
+
+section textarea::placeholder {
+    color: var(--secondary-color);
+}
+
+section textarea:active {
+    background-color: unset;
+    border: unset;
+    outline: none;
+}
+
+section .info {
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1.2em;
+}
+
+section .info img {
+    padding-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+section .info small {
+    font-size: 1em;
+}
+
+section .btn {
+    display: flex;
+    flex-direction: column;
+}
+
+section .btn button {
+    padding: 2em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 2em;
+    color: var(--secondary-color);
+    background-color: unset;
+}
+
+section .btn button:first-child {
+    margin-bottom: 1.2em;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+section .resp {
+    margin-top: 5.2rem;
+    border-radius: 2.8rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+    background-color: var(--tertiary-color);
+    text-align: center;
+}
+
+section .resp .active img {
+    display: none;
+}
+
+section .resp .active p {
+    margin-bottom: 1.5em;
+}
+
+section .resp .active p strong {
+    font-size: 2em;
+    line-height: 1.2em;
+    color: #343A40;
+}
+
+section .resp .active small {
+    font-size: 1.2em;
+    line-height: 2em;
+    color: var(--text-resp);
+}
+
+section .resp .inactive {
+    display: none;
+}
+
+section .resp .inactive p {
+    font-size: 2em;
+    color: var(--text-resp);
+    line-height: 2em;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+section .resp .inactive button {
+    padding: 2em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 2em;
+    color: var(--secondary-color);
+    background-color: unset;
+    width: 100%;
+}
+
+@media (min-width: 424px ) and (max-width: 768px) {
+    section .btn {
+        flex-direction: unset;
+    }
+
+    section .btn button {
+        width: 100%;
+    }
+
+    section .btn button:first-child {
+        margin-bottom: 0px;
+        margin-right: 2em;
+    }
+}
+
+@media (min-width: 769px) {
+
+    header {
+        position: absolute;
+        width: auto;
+        top: 0;
+        left: 3em;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-around;
+        padding: 4em;
+        height: 80vh;
+        align-items: center;
+    }
+
+    section .first {
+        width: 100%;
+        padding: 0 5em 0 5em;
+    }
+
+    section .btn {
+        flex-direction: unset;
+    }
+
+    section .btn button {
+        width: 100%;
+    }
+
+    section .btn button:first-child {
+        margin-bottom: 0px;
+        margin-right: 2em;
+    }
+    
+    section .resp {
+        margin-top: 0px;
+    }
+
+    section .resp .active img {
+        display: block;
+        width: 20em;
+        height: 20em;
+    }
+}
